@@ -1,0 +1,8 @@
+.masthead {
+  height: 120vh;
+  min-height: 300px;
+  background-image: url('/static/images/ajlogo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

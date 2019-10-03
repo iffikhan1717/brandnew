@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+    <section id="showcase-inner" class="py-5 text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 class="display-4">AGHAJEE MALIK SALEEM HEIGHTS</h1>
+                    <p class="lead">
+                        <i class="fas fa-map-marker"></i>NEAR KIDNEY HOSPITAL NEXT TO ASIAN VILLAS QUETTA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="listing" class="py-4">
+        <div class="container">
+            <a href="{% url 'homepage' %}" class="btn btn-light mb-4">Back To Schems</a>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Home Main Image -->
+                    <img src="{% static 'images/ms/ms_heights/height.jpg' %}" class="img-main img-fluid mb-2">
+                    <!-- Thumbnails -->
+                    <div class="row mb-5 thumbs">
+                        <div class="col-md-2">
+                            <a href="{% static 'images/ms/ms_heights/WhatsApp Image 2019-07-09 at 8.06.05 PM.jpeg' %}" data-lightbox="home-images">
+                                <img src="{% static 'images/ms/ms_heights/WhatsApp Image 2019-07-09 at 8.06.05 PM.jpeg' %}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="col-md-2">
+                            <a href="{% static 'images/ms/ms_heights/2.jpeg' %}" data-lightbox="home-images">
+                                <img src="{% static 'images/ms/ms_heights/2.jpeg' %}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <!-- Fields -->
+
+
+                    <!-- Description -->
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <h1 align="center">{{ ss.name }}</h1>
+                            <i><h3>Overview</h3></i>
+                            <p>
+                                The project is an establishment of AghaJee Builders offering apartments and bungalows of
+                                2- and 3-Bedrooms, in different sizes. It is a residential project with its main
+                                offerings being apartments and bungalows, however, for the comfort of its residents, it
+                                will also offer shops for sale. Both the property types; apartments and bungalows will
+                                consist of a Kitchen, Attached Bathrooms, Bedroom(s), Drawing Room and a TV Lounge. The
+                                kitchen will be designed in an American style, meting out sufficient space for you to
+                                cook and keep your cooking ware and crockery in. The TV lounge will be spacious enough
+                                to let you dine, watch TV and have a good chit chat with the family.
+
+                                The project will have a jamiah mosque where the residents can offer prayers and carry
+                                out their religious rituals. The tubewell will provide fresh water to the residents,
+                                whereas, other techniques will also be used to supply water, 24/7. For vertical
+                                transportation, there will be state of the art elevators that will take you to the
+                                desired floor without any hassles – smoothly and speedily. There will be a dedicated
+                                basement floor for car parking, providing you with sufficient space.
+                                A separate maintenance team will be responsible for the cleanliness, management and
+                                operations of both, the apartments and the bungalows. The project is carefully designed
+                                to be well ventilated with fresh air coming in. While all the facilities are available
+                                within a kilometres reach, the safety and security of the residents is not compromised
+                                upon at all. There will be a 24/7 security system taking care of both, the apartments
+                                and the bungalows. The security system will include well-trained personnel who will be
+                                looking after the people and monitor everything through CCTV cameras.</p>
+                            <i><h3>Features</h3></i>
+                            <i class="fa fa-building">&nbsp;Apartments, Bungalows and Shops &nbsp;</i>
+                            <i class="fa fa-bed"> &nbsp;2 and 3-Bedrooms</i>,
+                            <b>
+                                <i>American Kitchen</i>,
+                                <i>Spacious TV Lounge</i>,
+                                <i>Jamiah Mosque</i>,
+                                <i>State of the art Elevators</i>
+
+                                <i>24/7 Security</i>,<i>CCTV Monitoring System</i>Maintenance,Well Ventilated & Much
+                                More.</b><br>
+                            <p></p>
+
+                            <i><h3>Floor Plans</h3></i>
+
+                            <div class="row mb-5 thumbs">
+                                <div class="col-md-2">
+                                    <a href="{% static 'images/ms/ms_heights/2.jpeg' %}" data-lightbox="home-images">
+                                        <img src="{% static 'images/ms/ms_heights/2.jpeg' %}" alt="" class="img-thumbnail">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <p></p><br>
+
+                            <div class="container">
+                                <h2>Project Schedule</h2>
+
+                                <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Flat Name</th>
+      <th scope="col">Area</th>
+      <th scope="col">Price</th>
+      <th scope="col">Down Payment</th>
+      <th scope="col">On Possession</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+
+      <th scope="row">G2</th>
+      <td>1177 Square Feets</td>
+      <td>65 Lacs</td>
+      <td>50 %</td>
+      <td>50 %</td>
+    </tr>
+    <tr>
+      <th scope="row">G3</th>
+      <td>1120 Square Feets</td>
+      <td>62 Lacs</td>
+      <td>50 %</td>
+      <td>50 %</td>
+    </tr>
+    <tr>
+      <th scope="row">F7</th>
+      <td>1000 Sqare Feets</td>
+      <td>55 Lac</td>
+      <td>50 %</td>
+      <td>50 %</td>
+    </tr>
+  <tr>
+      <th scope="row">S10</th>
+      <td>1180</td>
+      <td>55 Lac</td>
+      <td>50 %</td>
+      <td>50 %</td>
+    </tr>
+  </tbody>
+</table>
+
+                            </div>
+
+
+                            <marquee style="color: cornflowerblue"><b>Booking Open 25% Down Payment,18-month Easy
+                                Installments.</b></marquee>
+
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">Make An
+                        Inquiry
+                    </button>
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Inquiry Modal -->
+    <div class="modal fade" id="inquiryModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inquiryModalLabel">Make An Inquiry</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="property_name" class="col-form-label">Property:</label>
+                            <input type="text" name="listing" class="form-control" value="45 Drivewood Cirlce" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Name:</label>
+                            <input type="text" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="col-form-label">Phone:</label>
+                            <input type="text" name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-form-label">Message:</label>
+                            <textarea name="message" class="form-control"></textarea>
+                        </div>
+                        <hr>
+                        <input type="submit" value="Send" class="btn btn-block btn-secondary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
+
+
+
+
+

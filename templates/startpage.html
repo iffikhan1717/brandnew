@@ -1,0 +1,991 @@
+{% include 'head.html' %}
+{% load static %}
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">AGHAJEE BUILDERS & DEVELOPERS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'homepage' %}">Home
+
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'lstt' %}">latest Projects
+
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'psts' %}">Blog
+
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'abt' %}">About Us
+
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'cont-us' %}">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+{% block content %}
+
+    <p></p>
+    <div class="container">
+        <br>
+        <!-- Page Heading -->
+        <h1 align="center" class="card-img-top btn-primary"> OUR PROJECTS
+        </h1>
+    </div>
+    <P></P><p></p><br>
+    <div class="container">
+
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="{% url 'tj' %}">
+                    <img class="img-fluid rounded mb-3 mb-md-0" height="200;"
+                         src="{% static 'images/tajikabad/1.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <br><br><br><br><br>
+                <h3>AGAHJEE APARTMENTS</h3>
+                <p>AghaJee Apartments Carefully Designed, Well Planned, Well Executed</p>
+                <a class="btn btn-primary" href="{% url 'tj' %}">View Project</a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="{% url 'jin' %}">
+                    <img class="img-fluid rounded mb-3 mb-md-0"
+                         src="{% static 'images/jinnah/IMG-20190625-WA0019.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>AGHAJEE JINNAH APARTMENTS</h3>
+                <p>AghaJee Jinnah Apartments Carefully Designed, Well Planned, Well Executed.</p>
+                <a class="btn btn-primary" href="{% url 'jin' %}">View Project Details</a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Three -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="{% url 'ms' %}">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="{% static 'images/ms/1.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>AGHAJEE MALIK SALEEM APARTMENTS & BUNGALOWS</h3>
+                <p>Looking for Comfort with affordable range. Here you Are. Aghajee Malik Saleem Apartments and
+                    Bunglows.</p>
+                <a class="btn btn-primary" href="{% url 'ms' %}">Click for More info</a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Four -->
+        <div class="row">
+
+            <div class="col-md-7">
+                <a href="{% url 'msh' %}">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="{% static 'images/ms/ms_heights/height.jpg' %}"
+                         alt="">
+                </a>
+            </div>
+            <br><br>
+
+            <div class="col-md-5">
+                <h3>AGHAJEE MALIK SALEEM HEIGHTS</h3>
+                <p>Apartments with luxiourious atmosphere and with all facilities </p>
+                <a class="btn btn-primary" href="{% url 'msh' %}">Click for Project Details</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p></p><br>
+
+
+    <style>
+        /* FontAwesome for working BootSnippet :> */
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        #team {
+            background: #eee !important;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: #108d6f;
+            border-color: #108d6f;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #007b5e;
+            border-color: #007b5e;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        section .section-title {
+            text-align: center;
+            color: #007b5e;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        #team .card {
+            border: none;
+            background: #ffffff;
+        }
+
+        .image-flip:hover .backside,
+        .image-flip.hover .backside {
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            border-radius: .25rem;
+        }
+
+        .image-flip:hover .frontside,
+        .image-flip.hover .frontside {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+
+        .mainflip {
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -moz-transition: 1s;
+            -moz-transform: perspective(1000px);
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .frontside {
+            position: relative;
+            -webkit-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+
+        .backside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: white;
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+        }
+
+        .frontside,
+        .backside {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transition: 1s;
+            -moz-transform-style: preserve-3d;
+            -o-transition: 1s;
+            -o-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+
+        .frontside .card,
+        .backside .card {
+            min-height: 312px;
+        }
+
+        .backside .card a {
+            font-size: 18px;
+            color: #007b5e !important;
+        }
+
+        .frontside .card .card-title,
+        .backside .card .card-title {
+            color: #007b5e !important;
+        }
+
+        .frontside .card .card-body img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+
+    </style>
+    <section id="team" class="pb-5">
+        <div class="container">
+            <h5 class="section-title h1 text-center card-title">OUR TEAM</h5>
+            <div class="row">
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="{% static 'teamphoto/s.jpg' %}"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Syed Saqib Agha</h4>
+                                        <p class="card-text">Agha Sab Director and Founder of Aghajee Builders &
+                                            Developers.</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">AGHA SAB</h4>
+                                        <p class="card-text">Basic info and profile.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/najmus.saqib2">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+
+
+
+                                        </ul>
+                                        Cell No: 0313-8230715<p></p>
+                                        Gmail:  aghajeebuilders20@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class="img-thumbnail" src="{% static 'teamphoto/amir.jpeg' %}"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">AMIR TJ</h4>
+                                        <p class="card-text">Marketing Manager.</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">AMIR TJ</h4>
+                                        <p class="card-text">basic info and profile.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+
+
+
+                                        </ul>
+                                        Cell No: 0333-3334427 <p></p>
+                                        Email: aghajeebuilders20@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="{% static 'teamphoto/IRF.jpg' %}"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Mohammad Irfan</h4>
+                                        <p class="card-text">Software Engineer and Developer.</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Mohammad IRfan</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.This is basic card with image on top, title, description and
+                                            button.This is basic card with image on top, title, description and
+                                            button.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="{% static 'teamphoto/zakir.jpeg' %}"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Zakir Khan</h4>
+                                        <p class="card-text">Principal Architect.</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Zakir Khan</h4>
+                                        <p class="card-text">Principal Architect.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Daniyal</h4>
+                                        <p class="card-text">Site Engineer</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Daniyal</h4>
+                                        <p class="card-text">Site Engineer</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">xyz</h4>
+                                        <p class="card-text">here bio data and few words.</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">xyz</h4>
+                                        <p class="card-text">here bio data and few words.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+
+            </div>
+        </div>
+    </section>
+
+{#    <section id="team" class="pb-5">#}
+{#        <div class="container">#}
+{#            <h5 class="section-title h1 text-center">OUR Engineers</h5>#}
+{#            <div class="row">#}
+{#                <!-- Team member -->#}
+{#                <div class="col-xs-12 col-sm-6 col-md-4">#}
+{#                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">#}
+{#                        <div class="mainflip">#}
+{#                            <div class="frontside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center">#}
+{#                                        <p><img class=" img-fluid" src="{% static 'teamphotos/saqib.jpg' %}"#}
+{#                                                alt="card image"></p>#}
+{#                                        <h4 class="card-title">Syed Saqib Agha</h4>#}
+{#                                        <p class="card-text">Agha Sab Director and Founder of Aghajee Builders &#}
+{#                                            Developers.</p>#}
+{#                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="backside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center mt-4">#}
+{#                                        <h4 class="card-title">AGHA SAB</h4>#}
+{#                                        <p class="card-text">Basic info and profile.</p>#}
+{#                                        <ul class="list-inline">#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-facebook"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-twitter"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-skype"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-google"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- ./Team member -->#}
+{#                <!-- Team member -->#}
+{#                <div class="col-xs-12 col-sm-6 col-md-4">#}
+{#                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">#}
+{#                        <div class="mainflip">#}
+{#                            <div class="frontside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center">#}
+{#                                        <p><img class=" img-fluid" src="{% static 'teamphotos/amir.jpg' %}"#}
+{#                                                alt="card image"></p>#}
+{#                                        <h4 class="card-title">AMIR TJ</h4>#}
+{#                                        <p class="card-text">Marketing Manager.</p>#}
+{#                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="backside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center mt-4">#}
+{#                                        <h4 class="card-title">AMIR TJ</h4>#}
+{#                                        <p class="card-text">basic info and profile.</p>#}
+{#                                        <ul class="list-inline">#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-facebook"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-twitter"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-skype"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-google"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- ./Team member -->#}
+{#                <!-- Team member -->#}
+{#                <div class="col-xs-12 col-sm-6 col-md-4">#}
+{#                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">#}
+{#                        <div class="mainflip">#}
+{#                            <div class="frontside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center">#}
+{#                                        <p><img class=" img-fluid" src="{% static 'teamphotos/IRF.jpg' %}"#}
+{#                                                alt="card image"></p>#}
+{#                                        <h4 class="card-title">Mohammad Irfan</h4>#}
+{#                                        <p class="card-text">Software Engineer and Developer.</p>#}
+{#                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="backside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center mt-4">#}
+{#                                        <h4 class="card-title">Mohammad IRfan</h4>#}
+{#                                        <p class="card-text">This is basic card with image on top, title, description#}
+{#                                            and button.This is basic card with image on top, title, description and#}
+{#                                            button.This is basic card with image on top, title, description and#}
+{#                                            button.</p>#}
+{#                                        <ul class="list-inline">#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-facebook"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-twitter"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-skype"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-google"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#                <!-- ./Team member -->#}
+{#                <!-- Team member -->#}
+{#                <div class="col-xs-12 col-sm-6 col-md-4">#}
+{#                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">#}
+{#                        <div class="mainflip">#}
+{#                            <div class="frontside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center">#}
+{#                                        <p><img class=" img-fluid"#}
+{#                                                src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg"#}
+{#                                                alt="card image"></p>#}
+{#                                        <h4 class="card-title">Shareef</h4>#}
+{#                                        <p class="card-text">here bio data and few words.</p>#}
+{#                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="backside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center mt-4">#}
+{#                                        <h4 class="card-title">Shareef khan</h4>#}
+{#                                        <p class="card-text">here bio data and few words.</p>#}
+{#                                        <ul class="list-inline">#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-facebook"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-twitter"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-skype"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-google"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- ./Team member -->#}
+{#                <!-- Team member -->#}
+{#                <div class="col-xs-12 col-sm-6 col-md-4">#}
+{#                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">#}
+{#                        <div class="mainflip">#}
+{#                            <div class="frontside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center">#}
+{#                                        <p><img class=" img-fluid"#}
+{#                                                src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png"#}
+{#                                                alt="card image"></p>#}
+{#                                        <h4 class="card-title">Zakir khan</h4>#}
+{#                                        <p class="card-text">here bio data and few words.</p>#}
+{#                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="backside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center mt-4">#}
+{#                                        <h4 class="card-title">zakir khan</h4>#}
+{#                                        <p class="card-text">here bio data and few words.</p>#}
+{#                                        <ul class="list-inline">#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-facebook"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-twitter"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-skype"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-google"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- ./Team member -->#}
+{#                <!-- Team member -->#}
+{#                <div class="col-xs-12 col-sm-6 col-md-4">#}
+{#                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">#}
+{#                        <div class="mainflip">#}
+{#                            <div class="frontside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center">#}
+{#                                        <p><img class=" img-fluid"#}
+{#                                                src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg"#}
+{#                                                alt="card image"></p>#}
+{#                                        <h4 class="card-title">xyz</h4>#}
+{#                                        <p class="card-text">here bio data and few words.</p>#}
+{#                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="backside">#}
+{#                                <div class="card">#}
+{#                                    <div class="card-body text-center mt-4">#}
+{#                                        <h4 class="card-title">xyz</h4>#}
+{#                                        <p class="card-text">here bio data and few words.</p>#}
+{#                                        <ul class="list-inline">#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-facebook"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-twitter"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-skype"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                            <li class="list-inline-item">#}
+{#                                                <a class="social-icon text-xs-center" target="_blank" href="#">#}
+{#                                                    <i class="fa fa-google"></i>#}
+{#                                                </a>#}
+{#                                            </li>#}
+{#                                        </ul>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- ./Team member -->#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
+
+
+
+    <!-- End of Team Members -->
+    <div class="container-fluid">
+        <h1 class="text-center">Contact Address</h1>
+        <hr>
+
+
+        <div class="row">
+            <iframe width="100%" height="800" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=aghajee%20builders&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-4 box1 pt-4">
+                <a href="tel:+123456789"><i class="fas fa-phone fa-3x"></i>
+                    <h3 class="d-none d-lg-block d-xl-block">Phone</h3></a>
+                    <p class="d-none d-lg-block d-xl-block">0313-8230715 Agha Sab</p>
+                <p class="d-none d-lg-block d-xl-block">0333-3334427 Amir Tj</p></a>
+                <p class="d-none d-lg-block d-xl-block">0812-446556</p></a>
+            </div>
+            <div class="col-4 box2 pt-4">
+                <a href=""><i class="fas fa-home fa-3x"></i>
+                    <h3 class="d-none d-lg-block d-xl-block">Address</h3>
+                    <p class="d-none d-lg-block d-xl-block">Aghajee Builders & Devlopers Jinnah Town Quetta</p></a>
+            </div>
+            <div class="col-4 box3 pt-4">
+                <a href="mailto:test@test.com"><i class="fas fa-envelope fa-3x"></i>
+                    <h3 class="d-none d-lg-block d-xl-block">E-mail</h3>
+                    <p class="d-none d-lg-block d-xl-block">aghajeebuilders20@gmail.com</p></a>
+            </div>
+        </div>
+    </div>
+
+
+    {#<footer class="ftco-footer ftco-section">#}
+    {#    <div class="container">#}
+    {#        <div class="row mb-5">#}
+    {#            <div class="col-md">#}
+    {#                <div class="ftco-footer-widget mb-4">#}
+    {#                    <h2 class="ftco-heading-2">Square</h2>#}
+    {#                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there#}
+    {#                        live the blind texts.</p>#}
+    {#                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">#}
+    {#                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>#}
+    {#                        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>#}
+    {#                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>#}
+    {#                    </ul>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#            <div class="col-md">#}
+    {#                <div class="ftco-footer-widget mb-4 ml-md-4">#}
+    {#                    <h2 class="ftco-heading-2">Links</h2>#}
+    {#                    <ul class="list-unstyled">#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>#}
+    {#                    </ul>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#            <div class="col-md">#}
+    {#                <div class="ftco-footer-widget mb-4">#}
+    {#                    <h2 class="ftco-heading-2">Services</h2>#}
+    {#                    <ul class="list-unstyled">#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Architectural Design</a></li>#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Interior Design</a></li>#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Exterior Design</a></li>#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Lighting Design</a></li>#}
+    {#                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>AutoCAD Service</a></li>#}
+    {#                    </ul>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#            <div class="col-md">#}
+    {#                <div class="ftco-footer-widget mb-4">#}
+    {#                    <h2 class="ftco-heading-2">Have a Questions?</h2>#}
+    {#                    <div class="block-23 mb-3">#}
+    {#                        <ul>#}
+    {#                            <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span>#}
+    {#                            </li>#}
+    {#                            <li><a href="#"><span class="icon icon-phone"></span><span#}
+    {#                                    class="text">+2 392 3929 210</span></a></li>#}
+    {#                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a>#}
+    {#                            </li>#}
+    {#                        </ul>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#        <div class="row">#}
+    {#            <div class="col-md-12 text-center">#}
+    {##}
+    {#                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->#}
+    {#                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>#}
+    {#                    All rights reserved | This template is made with <i class="icon-heart color-danger"#}
+    {#                                                                        aria-hidden="true"></i> by <a#}
+    {#                            href="https://colorlib.com" target="_blank">Colorlib</a>#}
+    {#                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+    {#</footer>#}
+
+{% endblock content %}
+
+
+
+
+
